@@ -48,6 +48,7 @@ DES.init_keys(key, rkb)
 
 while True:
     dest = input("Input username destination : ")
+    key_folder = os.listdir(keypath)
     if dest+'.txt' not in key_folder:
         print(dest + ' is not on client list')
     else :
